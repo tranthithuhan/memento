@@ -21,6 +21,10 @@ class Track {
 			creationDate: this.creationDate
 		}
 	}
+	
+	clone() {
+		return new Track(this.getTrack());
+	}
 }
 
 export default Track

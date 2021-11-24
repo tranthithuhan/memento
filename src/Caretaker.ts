@@ -1,5 +1,6 @@
 import Originator from './Originator'
 import Memento from './Memento'
+import Track from './Track'
 
 const MAX_VERSION_LENGTH = 5
 
@@ -12,7 +13,7 @@ class Caretaker {
 		this.originator = null
 	}
 	
-	save(track) {
+	save(track: Track) {
 		if (this.states.length === MAX_VERSION_LENGTH)
 			this.states.shift()
 		
@@ -24,7 +25,7 @@ class Caretaker {
 		return this.states.length
 	}
 	
-	getHistory() {
+	getHistory(){
 		return this.states.map(state => this.originator.getTrack(state))
 	}
 	

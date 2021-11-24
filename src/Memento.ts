@@ -4,7 +4,7 @@ class Memento {
 	private state: Track
 	private saveDate: number
 	
-	constructor(state) {
+	constructor(state: Track) {
 		this.state = state
 		this.saveDate = new Date().getTime()
 	}

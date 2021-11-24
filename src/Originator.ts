@@ -5,7 +5,7 @@ class Originator {
 	private track: Track
 	
 	constructor(track = new Track({})) {
-		this.track = track
+		this.track = track.clone()
 	}
 	
 	save() {
