@@ -21,4 +21,10 @@ caretaker.save(track);
 track.setName("update 5");
 caretaker.save(track);
 
-console.log("4", caretaker.getHistory());
+console.log("getHistory", caretaker.getHistory());
+
+console.log("get version 2", caretaker.getVersion(2));
+
+console.log("restore to version 3", caretaker.restore(3));
+
+console.log("getHistory", caretaker.getHistory());

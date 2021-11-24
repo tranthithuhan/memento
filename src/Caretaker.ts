@@ -5,7 +5,7 @@ import Track from './Track'
 const MAX_VERSION_LENGTH = 5
 
 class Caretaker {
-	states: Memento[]
+	private states: Memento[]
 	private originator: Originator
 	
 	constructor() {

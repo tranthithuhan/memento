@@ -1,6 +1,6 @@
 class Track {
-	name: string
-	creationDate: number
+	private name: string
+	private creationDate: number
 	
 	constructor({ name = null, creationDate = null }) {
 		this.name = name
