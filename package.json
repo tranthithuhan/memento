@@ -1,0 +1,23 @@
+{
+  "name": "mememto",
+  "version": "1.0.0",
+  "description": "A test of Memento design pattern",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tranthithuhan/memento.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tranthithuhan/memento/issues"
+  },
+  "homepage": "https://github.com/tranthithuhan/memento#readme",
+  "dependencies": {
+    "tslint": "^6.1.3",
+    "typescript": "^4.5.2"
+  }
+}
